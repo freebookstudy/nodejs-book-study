@@ -1,0 +1,27 @@
+//layout을 통해 공통되는 부분을 제외한 부분만 처리되도록 작성함
+extends lay
+
+block content
+  //<div id="freefront" width="500"></div>
+  #freefront(width=500)
+  //<span class="express nodejs"></span>
+  span.express.nodejs
+  //<button type='submit'>전송</button>
+  button(type='submit') 전송
+  //<p>안녕하세요. 여러 줄을 입력합니다. <br/> 태그도 중간에 넣을 수 있습니다.
+  if variable
+    div  참입니다.
+  else
+    div  거짓입니다.
+  for i in fruits
+    div= i
+  p
+   | 안녕하세요
+   | 여러 줄을 입력합니다.
+   br
+   | 태그도 중간에 넣을 수 있습니다.
+
+block script
+  script.
+    var message = 'pug';
+    alert(message);

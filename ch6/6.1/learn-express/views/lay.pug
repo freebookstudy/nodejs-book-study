@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    //- 입력시 javascript 입력 가능
+    // -const title = '익스프레스'
+    // -const title2 = '안녕'
+    //변수사용이 가능
+    -const variable = true
+    title= title + ' ' + title2
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    style.
+      p {
+        color: red;
+      }
+  body
+    include header
+    //바뀌는 부분은 block로 처리
+    block content
+    include footer
+    block script
+      //script block의 기본값
+      script.
+        console.log('hi')
