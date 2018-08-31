@@ -14,3 +14,15 @@ DB - Collection - Document
 ### Mongoose
 Object와 Document를 맵핑해줘서 ODM 이라고 부름
 몽구스는 몽고DB에 제약을 두지만 편의성과 안정성을 추가함
+
+- Mongoose 설치
+```bash
+npm i mongoose
+```
+
+#### Mongoose 주요 명령어
+find: 모두 찾기
+findOne: 하나만 찾기
+new 스키마(date).save: 생성
+update: 수정하기
+remove: 제거하기
