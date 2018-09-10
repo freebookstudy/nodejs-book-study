@@ -2,7 +2,7 @@
 
 ## 데이터베이스와 연동하여 가게부 만들어보기
 
-## 1. 기본환경 셋팅
+## 1. 기본환경 셋팅]
 1. MySQL ORM 인 sequelize 와 mysql2 설치
 ```bash
 npm i sequelize mysql2
@@ -19,19 +19,32 @@ npm i -g sequelize-cli
 sequelize init
 ```
 
-- MySQL 접속시 경고 메세지 끄기 옵션
-```
-"operatorsAliases": false
-```
-
-- DB 생성
-```bash
-sequelize db:create
-```
+4. DB 생성설정
+  1. config/config.json의 정보를 변경
+  ```
+  "development": {
+      "username": "root",
+      "password": "1879asdf",
+      "database": "nodewallet",
+      "host": "127.0.0.1",
+      "dialect": "mysql",
+      "operatorsAliases": false
+    }
+  ```
+   
+  2. MySQL 접속시 경고 메세지 끄기 옵션
+  ```
+  "operatorsAliases": false
+  ```
+  
+  3. DB 생성
+  ```bash
+  sequelize db:create
+  ```
 
 - models 내에 자동생성된 index.js 수정
 
-4. 명령어를 여러개 등록해도 됨
+5. 명령어를 여러개 등록해도 됨
 bin에 등록 후 -g 재설치
 ```
  "bin": {
