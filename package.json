@@ -1,7 +1,0 @@
-{
-  "name": "nodejs-book-study",
-  "version": "1.0.0",
-  "dependencies": {
-    "http2": "latest"
-  }
-}
